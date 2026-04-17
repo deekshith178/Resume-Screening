@@ -1,0 +1,15 @@
+Jane Smith
+
+Summary
+Machine Learning Engineer with 5+ years of experience deploying ML models to production.
+
+Skills
+Python, ML, Deep Learning, TensorFlow, PyTorch, Docker, Kubernetes, GCP
+
+Experience
+ML Engineer, XYZ Tech (Jan 2019 - Present)
+- Deployed ML models as microservices using Docker and Kubernetes
+- Implemented CI/CD pipelines for model deployment
+
+Education
+Bachelor of Technology in Computer Science

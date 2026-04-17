@@ -1,0 +1,30 @@
+# Candidate Screening & Categorization Methodology
+
+The system uses a sophisticated hybrid AI approach combining Deep Learning and Classical Machine Learning algorithms.
+
+## 1. Resume Intake & Parsing
+*   **Technique:** Regular Expression (Regex) Pattern Matching
+*   **Method:** Extracts entities (Name, Email, Skills) from raw text.
+
+## 2. Semantic Embedding (The "Language Brain")
+*   **Algorithm:** **SBERT (Siamese BERT)**
+*   **Model:** `all-MiniLM-L6-v2` (Transformer Neural Network)
+*   **Function:** Converts variable-length resume text into a fixed 384-dimensional vector. This projection allows the system to calculate mathematical distances between resumes and job descriptions.
+
+## 3. Automated Categorization (Clustering & Classification)
+*   **Algorithm 1:** **K-Means Clustering**
+    *   Used during the *Training Phase* to group the historical resume dataset into distinct "Profession Zones".
+    *   Calculates the **Centroid** (geometric center) for each job category (e.g., the "average" Data Scientist vector).
+*   **Algorithm 2:** **Cosine Similarity**
+    *   Used during the *Inference Phase* (Live Screening).
+    *   Calculates the cosine of the angle between a new candidate's vector and the K-Means Centroids. The candidate is assigned to the closest centroid (smallest angle).
+
+## 4. Scoring Algorithm (Fusion)
+*   **Technique:** **Weighted Linear Combination**
+*   **Formula:** `Score = 100 * (w_S * Similarity + w_E * Exp_Norm + w_P * Proj_Norm + w_C * Cert_Norm)`
+*   **Normalization:** **Min-Max Scaling** (via Scikit-learn) is used to scale structured data (Experience, Projects) to a 0-1 range.
+
+## 5. Guidance & Recommendations
+*   **Algorithm:** **k-Nearest Neighbors (k-NN)**
+*   **Function:** Finds the *k* closest successful profiles (neighbors) to a lower-scoring candidate within the vector space.
+*   **Application:** Identifying specific skills present in the "neighbors" but missing from the candidate (e.g., "70% of your nearest successful neighbors know Docker, but you don't").

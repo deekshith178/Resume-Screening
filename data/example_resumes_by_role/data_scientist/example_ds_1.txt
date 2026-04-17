@@ -1,0 +1,15 @@
+John Doe
+
+Summary
+Data Scientist with 4+ years of experience in machine learning, NLP, and data analysis.
+
+Skills
+Python, Machine Learning, Deep Learning, Pandas, NumPy, SQL, AWS
+
+Experience
+Data Scientist, ABC Corp (Jan 2020 - Dec 2023)
+- Built ML models for customer churn prediction
+- Developed NLP pipelines for text classification
+
+Education
+Master of Science in Data Science

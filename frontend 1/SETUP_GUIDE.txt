@@ -1,0 +1,165 @@
+==============================================================================
+RESUME SHORTLISTING & CANDIDATE GUIDANCE SYSTEM - SETUP GUIDE
+==============================================================================
+
+SYSTEM REQUIREMENTS:
+- Node.js 18+ (LTS recommended)
+- npm 9+ or yarn 1.22+
+- Modern browser (Chrome, Firefox, Safari, Edge)
+
+INSTALLATION STEPS:
+==============================================================================
+
+1. CLONE THE REPOSITORY
+   git clone <repository-url>
+   cd resume-shortlisting-system
+
+2. INSTALL DEPENDENCIES
+   npm install
+   
+   OR if using yarn:
+   yarn install
+
+3. ENVIRONMENT VARIABLES
+   Create a .env.local file in the root directory:
+   
+   NEXT_PUBLIC_API_URL=http://localhost:3000
+   NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL=http://localhost:3000
+   
+   (Add additional env vars as needed for backend integrations)
+
+4. START DEVELOPMENT SERVER
+   npm run dev
+   
+   Server will run at http://localhost:3000
+
+5. BUILD FOR PRODUCTION
+   npm run build
+   npm start
+
+PROJECT STRUCTURE:
+==============================================================================
+/app
+  ├── /auth              - Authentication pages
+  ├── /candidate         - Candidate portal pages
+  ├── /recruiter         - Recruiter dashboard pages
+  ├── /admin             - Admin dashboard
+  ├── /notifications     - Notification center
+  ├── /settings          - User settings
+  └── /api              - API routes (mock endpoints)
+
+/components
+  ├── /ui               - shadcn/ui components
+  ├── /recruiter        - Recruiter-specific components
+  └── /candidate        - Candidate-specific components
+
+/lib                     - Utility functions and helpers
+
+KEY FEATURES:
+==============================================================================
+✓ Recruiter Dashboard
+  - Resume upload and management
+  - Candidate shortlisting and ranking
+  - Adjustable scoring weights
+  - Job management (create/edit)
+  - Advanced filtering and search
+  - Batch operations
+  - Analytics and audit logs
+
+✓ Candidate Portal
+  - Application status tracking
+  - Score breakdown visualization
+  - Test-fit tool (check job compatibility)
+  - Personalized guidance system
+  - Learning path recommendations
+  - Resume re-upload capability
+
+✓ Admin Dashboard
+  - User management
+  - System analytics
+  - Growth tracking
+  - System health monitoring
+
+✓ Notification System
+  - Real-time notifications
+  - Preference management
+  - Notification history
+
+DEVELOPMENT WORKFLOW:
+==============================================================================
+
+1. Start dev server: npm run dev
+2. Open http://localhost:3000
+3. Make code changes (auto-hot reload enabled)
+4. Check console for any errors
+5. Test across different browsers
+
+DEPLOYMENT:
+==============================================================================
+
+To Vercel (Recommended):
+1. Push code to GitHub
+2. Go to vercel.com and connect your repository
+3. Vercel auto-detects Next.js and deploys automatically
+
+To Other Platforms:
+1. Run: npm run build
+2. Deploy the /out or /dist directory
+3. Set environment variables in your hosting platform
+
+TESTING CREDENTIALS:
+==============================================================================
+
+Recruiter Login:
+- Email: test@example.com
+- Password: password123
+
+Candidate Access:
+- Email: alice@example.com or bob@example.com
+- Access via magic link (check console for link in demo)
+
+TROUBLESHOOTING:
+==============================================================================
+
+Port 3000 already in use?
+  npm run dev -- -p 3001
+
+Clear cache and reinstall:
+  rm -rf node_modules package-lock.json
+  npm install
+
+Build issues?
+  npm run lint  (check for linting errors)
+  npm run build (detailed build errors)
+
+NEXT STEPS:
+==============================================================================
+
+1. Connect to Backend API
+   - Update API calls in /app/api routes
+   - Configure authentication tokens
+   - Set up database connections
+
+2. Add Real Authentication
+   - Integrate Supabase or Firebase auth
+   - Implement token refresh logic
+   - Set up role-based access control
+
+3. Configure Integrations
+   - Set up email service (SendGrid, AWS SES)
+   - Configure file storage (AWS S3, Vercel Blob)
+   - Connect analytics (Vercel Analytics, Mixpanel)
+
+4. Performance Optimization
+   - Enable caching strategies
+   - Implement image optimization
+   - Set up CDN for static assets
+
+SUPPORT:
+==============================================================================
+For issues or questions, open an issue in the repository or check the
+documentation in the /docs folder.
+
+==============================================================================
+Last Updated: November 2025
+==============================================================================

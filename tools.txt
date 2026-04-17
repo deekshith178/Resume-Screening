@@ -1,0 +1,38 @@
+# Project Tools & Technologies
+
+## Frontend
+- **Framework:** Next.js 16 (React 19)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (with tailwind-merge, clsx)
+- **UI Components:** Shadcn UI (Radix UI primitives)
+- **Visualization:** Recharts
+- **Icons:** Lucide React
+- **Forms & Validation:** React Hook Form, Zod
+- **Notifications:** Sonner
+- **Testing/Utility:** date-fns, vaul
+
+## Backend
+- **Framework:** FastAPI
+- **Server:** Uvicorn
+- **Language:** Python 3.x
+- **ORM:** SQLAlchemy (v2.0+)
+- **Validation:** Pydantic
+- **Authentication:** Python-Jose (JWT), Bcrypt (Password Hashing)
+- **Utilities:** Python-multipart (Uploads), Python-dotenv, Requests
+
+## AI / Machine Learning
+- **NLP & Embeddings:** Sentence Transformers (all-MiniLM-L6-v2)
+- **ML Pipeline:** Scikit-learn
+- **Clustering:** UMAP, HDBSCAN
+- **Data Processing:** Pandas, NumPy
+- **PDF Parsing:** PyMuPDF
+- **Visualization:** Matplotlib, Seaborn
+- **Model Persistence:** Joblib
+- **External APIs:** SerpAPI (Google Search Results) for Guidance
+
+## Database
+- **Primary:** SQLite (via SQLAlchemy)
+
+## Development Tools
+- **Version Control:** Git
+- **IDE:** VS Code (implied)

@@ -1,0 +1,40 @@
+John Smith
+Data Scientist
+
+CONTACT
+Email: john.smith@example.com
+Phone: (555) 123-4567
+
+PROFESSIONAL SUMMARY
+Data Scientist with 5 years of experience in machine learning, data analysis, and statistical modeling. Proficient in Python, SQL, and various ML frameworks.
+
+SKILLS
+- Python, NumPy, Pandas, Scikit-learn
+- Machine Learning & Deep Learning
+- SQL & Database Management
+- Data Visualization (Matplotlib, Tableau)
+- Statistical Analysis & Modeling
+
+EXPERIENCE
+Senior Data Scientist | Tech Corp | 2020-Present
+- Developed ML models improving prediction accuracy by 25%
+- Built automated data pipelines processing 1M+ records daily
+- Led team of 3 data analysts
+
+Data Scientist | Analytics Inc | 2018-2020
+- Created recommendation systems for e-commerce platform
+- Performed A/B testing and statistical analysis
+
+EDUCATION
+M.S. Data Science | State University | 2018
+B.S. Computer Science | Tech College | 2016
+
+CERTIFICATIONS
+- AWS Certified Machine Learning Specialty
+- Google Data Analytics Certificate
+- TensorFlow Developer Certificate
+
+PROJECTS
+- Customer Churn Prediction Model (95% accuracy)
+- Real-time Fraud Detection System
+- Natural Language Processing Pipeline

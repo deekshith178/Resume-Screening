@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "w_S": 0.3629049219444426,
+    "w_E": 0.32889170969170317,
+    "w_P": 0.11190357687493215,
+    "w_C": 0.1962997914889221
+  },
+  "metadata": {
+    "generated_at": "2025-11-17T06:31:34.612634Z",
+    "resumes_path": "UpdatedResumeDataSet_cleaned.csv",
+    "structured_path": "resume_shortlisting_dataset_v2.csv",
+    "num_samples": 200
+  }
+}

@@ -1,0 +1,15 @@
+Alex Johnson
+
+Summary
+Backend Developer with 3+ years of experience building REST APIs and microservices.
+
+Skills
+Java, Spring Boot, REST APIs, SQL, Docker, AWS
+
+Experience
+Backend Developer, WebCo (Jan 2021 - Present)
+- Designed and implemented REST APIs using Spring Boot
+- Worked with DevOps team to containerize services using Docker
+
+Education
+Bachelor of Engineering in Information Technology
